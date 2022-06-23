@@ -22,12 +22,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/motorola/kane/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-## Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+## Inherit some common Pixel Experience stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+## Pixel Experience Props
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
 
 ## Device identifier, this must come after all inclusions
 PRODUCT_DEVICE := kane
-PRODUCT_NAME := lineage_kane
+PRODUCT_NAME := aosp_kane
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := motorola one vision
 PRODUCT_MANUFACTURER := motorola
