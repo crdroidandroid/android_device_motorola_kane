@@ -27,6 +27,9 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 ## Pixel Experience Props
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_GAPPS_ARCH := arm64
 
 ## Device identifier, this must come after all inclusions
