@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020 The ArrowOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_kane.mk
+    $(LOCAL_DIR)/arrow_kane.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_kane-user \
-    lineage_kane-userdebug \
-    lineage_kane-eng
+    arrow_kane-user \
+    arrow_kane-userdebug \
+    arrow_kane-eng

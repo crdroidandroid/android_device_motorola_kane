@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020-2021 The LineageOS Project
+# Copyright (C) 2020-2021 The ArrowOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,12 +22,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/motorola/kane/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-## Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+## Inherit some common Arrow stuff
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 ## Device identifier, this must come after all inclusions
 PRODUCT_DEVICE := kane
-PRODUCT_NAME := lineage_kane
+PRODUCT_NAME := arrow_kane
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := motorola one vision
 PRODUCT_MANUFACTURER := motorola
